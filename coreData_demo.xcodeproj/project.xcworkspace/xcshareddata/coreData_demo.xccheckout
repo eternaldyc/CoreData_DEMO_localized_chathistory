@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>44F6D724-CFD5-4E76-9B1B-5179A5530313</string>
+	<key>IDESourceControlProjectName</key>
+	<string>coreData_demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>055941AE-F6EA-4D93-BB46-DE017B3E41E0</key>
+		<string>ssh://github.com/eternaldyc/CoreData_DEMO_localized_chathistory</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>coreData_demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>055941AE-F6EA-4D93-BB46-DE017B3E41E0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/eternaldyc/CoreData_DEMO_localized_chathistory</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>055941AE-F6EA-4D93-BB46-DE017B3E41E0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>055941AE-F6EA-4D93-BB46-DE017B3E41E0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreData_DEMO_localized_chathistory</string>
+		</dict>
+	</array>
+</dict>
+</plist>
