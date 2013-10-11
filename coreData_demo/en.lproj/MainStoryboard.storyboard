@@ -1,23 +1,265 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhd-rl-lWn">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="Kx5-aL-DTD"/>
+                                    <constraint firstAttribute="height" constant="23" id="NAF-zN-dPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="添加聊天历史">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addChatHistory:" destination="2" eventType="touchUpInside" id="FJd-ac-19V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSA-bv-ieT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="uF1-7b-QS3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="获取群组最新聊天历史的时间">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getLatestChatTime:" destination="2" eventType="touchUpInside" id="1uE-6x-CLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw7-dc-rFd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="BtN-7Z-vfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="获取群组聊天历史">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getGroupChatHistory:" destination="2" eventType="touchUpInside" id="AaJ-hm-JVx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lp-ed-W7i">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="78y-UN-bXi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="获取一对一最新聊天历史的时间">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getLatestPrivateChatTime:" destination="2" eventType="touchUpInside" id="L1E-rM-SlW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dZ-0Y-wQY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="eM6-Fj-4CV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="获取一对一聊天历史">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getPrivateChatHistory:" destination="2" eventType="touchUpInside" id="a9h-VW-hGr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y5-KW-bkf">
+                                <color key="backgroundColor" red="1" green="0.77175327839042329" blue="0.17898568961772332" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="KZZ-Tx-rf1"/>
+                                    <constraint firstAttribute="width" constant="214" id="OZQ-VH-sfY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CoreData DEMO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxK-zE-uZ0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="eJT-DI-ZXd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="group_id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teP-y7-tgW">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="from_id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tSQ-uw-v81">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="CqE-Fs-TUV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="to_id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnc-XP-iTK">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7LC-7C-A9Q">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFQ-1d-r5l">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="NMD-6P-U3u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="msg_type" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5a-5k-hMp">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlk-fx-N1b">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="U60-3s-gTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="is_noti" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFY-ey-t7L">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Kgu-dr-zuH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-d4-r52">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clean:" destination="2" eventType="touchUpInside" id="Eer-hL-en4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="teP-y7-tgW" firstAttribute="leading" secondItem="fw7-dc-rFd" secondAttribute="leading" type="default" id="0ZO-EB-tfz"/>
+                            <constraint firstItem="2Lp-ed-W7i" firstAttribute="baseline" secondItem="KSA-bv-ieT" secondAttribute="baseline" type="default" id="1Kf-Oe-GYL"/>
+                            <constraint firstItem="KSA-bv-ieT" firstAttribute="trailing" secondItem="2Lp-ed-W7i" secondAttribute="trailing" type="default" id="1ne-R7-qqX"/>
+                            <constraint firstItem="teP-y7-tgW" firstAttribute="leading" secondItem="jnc-XP-iTK" secondAttribute="leading" type="default" id="1qC-9s-mCM"/>
+                            <constraint firstItem="KSA-bv-ieT" firstAttribute="top" secondItem="2dZ-0Y-wQY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2Yc-iZ-1TI"/>
+                            <constraint firstItem="J5a-5k-hMp" firstAttribute="trailing" secondItem="ZFQ-1d-r5l" secondAttribute="trailing" type="default" id="4Rg-fC-U2O"/>
+                            <constraint firstItem="Dlk-fx-N1b" firstAttribute="leading" secondItem="7y5-KW-bkf" secondAttribute="leading" type="default" id="8aL-cp-QpU"/>
+                            <constraint firstItem="OFY-ey-t7L" firstAttribute="leading" secondItem="ZFQ-1d-r5l" secondAttribute="leading" type="default" id="AFu-m2-rGl"/>
+                            <constraint firstItem="2dZ-0Y-wQY" firstAttribute="leading" secondItem="KSA-bv-ieT" secondAttribute="leading" type="default" id="Apd-1f-Ihk"/>
+                            <constraint firstItem="J5a-5k-hMp" firstAttribute="leading" secondItem="ZFQ-1d-r5l" secondAttribute="leading" type="default" id="C0m-CW-DX7"/>
+                            <constraint firstItem="KSA-bv-ieT" firstAttribute="trailing" secondItem="2dZ-0Y-wQY" secondAttribute="trailing" type="default" id="CzK-aA-lsv"/>
+                            <constraint firstItem="7LC-7C-A9Q" firstAttribute="trailing" secondItem="J5a-5k-hMp" secondAttribute="trailing" type="default" id="Dpt-eS-RHP"/>
+                            <constraint firstItem="ZFQ-1d-r5l" firstAttribute="baseline" secondItem="tSQ-uw-v81" secondAttribute="baseline" type="default" id="E8e-Jr-sJf"/>
+                            <constraint firstItem="fw7-dc-rFd" firstAttribute="baseline" secondItem="Vhd-rl-lWn" secondAttribute="baseline" type="default" id="F25-4s-Tqr"/>
+                            <constraint firstItem="7y5-KW-bkf" firstAttribute="trailing" secondItem="OFY-ey-t7L" secondAttribute="trailing" type="default" id="GvC-mv-jGJ"/>
+                            <constraint firstItem="jnc-XP-iTK" firstAttribute="top" secondItem="tSQ-uw-v81" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IiA-fg-HJl"/>
+                            <constraint firstItem="7Ma-d4-r52" firstAttribute="centerY" secondItem="bxK-zE-uZ0" secondAttribute="centerY" type="default" id="Iji-8V-gRM"/>
+                            <constraint firstItem="2dZ-0Y-wQY" firstAttribute="trailing" secondItem="fw7-dc-rFd" secondAttribute="trailing" type="default" id="Jt0-jK-YWT"/>
+                            <constraint firstItem="tSQ-uw-v81" firstAttribute="top" secondItem="Dlk-fx-N1b" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Kve-FV-Pee"/>
+                            <constraint firstItem="Vhd-rl-lWn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="45" id="LmB-iN-0fn"/>
+                            <constraint firstItem="2dZ-0Y-wQY" firstAttribute="leading" secondItem="Vhd-rl-lWn" secondAttribute="leading" type="default" id="NpT-fM-zCQ"/>
+                            <constraint firstItem="J5a-5k-hMp" firstAttribute="leading" secondItem="7LC-7C-A9Q" secondAttribute="leading" type="default" id="PRT-bV-vOZ"/>
+                            <constraint firstItem="2Lp-ed-W7i" firstAttribute="leading" secondItem="KSA-bv-ieT" secondAttribute="leading" type="default" id="Pb1-9I-xlk"/>
+                            <constraint firstItem="KSA-bv-ieT" firstAttribute="baseline" secondItem="2dZ-0Y-wQY" secondAttribute="baseline" type="default" id="QXO-Rf-rLq"/>
+                            <constraint firstItem="2dZ-0Y-wQY" firstAttribute="top" secondItem="fw7-dc-rFd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Rlr-Ve-ma6"/>
+                            <constraint firstItem="Vhd-rl-lWn" firstAttribute="top" secondItem="teP-y7-tgW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SaG-7G-RZ7"/>
+                            <constraint firstItem="7y5-KW-bkf" firstAttribute="top" secondItem="bxK-zE-uZ0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SdJ-hr-M1r"/>
+                            <constraint firstItem="Vhd-rl-lWn" firstAttribute="trailing" secondItem="7LC-7C-A9Q" secondAttribute="trailing" type="default" id="V7f-ad-gW5"/>
+                            <constraint firstItem="7Ma-d4-r52" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="VxT-G9-LRC"/>
+                            <constraint firstItem="Dlk-fx-N1b" firstAttribute="leading" secondItem="tSQ-uw-v81" secondAttribute="leading" type="default" id="WFA-0z-6xc"/>
+                            <constraint firstItem="7Ma-d4-r52" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-2" id="WJN-MI-9t7"/>
+                            <constraint firstItem="jnc-XP-iTK" firstAttribute="leading" secondItem="tSQ-uw-v81" secondAttribute="leading" type="default" id="bls-Tq-hCf"/>
+                            <constraint firstItem="bxK-zE-uZ0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="99" id="da8-7k-A0U"/>
+                            <constraint firstItem="J5a-5k-hMp" firstAttribute="baseline" secondItem="jnc-XP-iTK" secondAttribute="baseline" type="default" id="gKD-6E-AOz"/>
+                            <constraint firstItem="Vhd-rl-lWn" firstAttribute="trailing" secondItem="fw7-dc-rFd" secondAttribute="trailing" type="default" id="hK8-eK-0M4"/>
+                            <constraint firstItem="teP-y7-tgW" firstAttribute="trailing" secondItem="jnc-XP-iTK" secondAttribute="trailing" type="default" id="kDM-JJ-vuO"/>
+                            <constraint firstItem="jnc-XP-iTK" firstAttribute="trailing" secondItem="tSQ-uw-v81" secondAttribute="trailing" type="default" id="laN-0X-Hka"/>
+                            <constraint firstItem="2Lp-ed-W7i" firstAttribute="top" secondItem="KSA-bv-ieT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mzS-EO-uUn"/>
+                            <constraint firstItem="Dlk-fx-N1b" firstAttribute="top" secondItem="3" secondAttribute="top" constant="138" id="pP7-rM-WUz"/>
+                            <constraint firstItem="7LC-7C-A9Q" firstAttribute="baseline" secondItem="teP-y7-tgW" secondAttribute="baseline" type="default" id="qEk-QK-Lse"/>
+                            <constraint firstItem="OFY-ey-t7L" firstAttribute="top" secondItem="7y5-KW-bkf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="sx9-NG-bXT"/>
+                            <constraint firstItem="teP-y7-tgW" firstAttribute="top" secondItem="jnc-XP-iTK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ykk-jc-xNn"/>
+                            <constraint firstItem="fw7-dc-rFd" firstAttribute="top" secondItem="Vhd-rl-lWn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zJC-5x-4kb"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="resultOutput" destination="7y5-KW-bkf" id="Msu-wD-K9v"/>
+                        <outlet property="resultStatus" destination="Dlk-fx-N1b" id="T2z-eT-ceV"/>
+                        <outlet property="text1" destination="tSQ-uw-v81" id="DdK-fx-OCK"/>
+                        <outlet property="text2" destination="ZFQ-1d-r5l" id="N8j-ZC-3cJ"/>
+                        <outlet property="text3" destination="jnc-XP-iTK" id="tz5-Ac-e8S"/>
+                        <outlet property="text4" destination="J5a-5k-hMp" id="80g-fV-kGc"/>
+                        <outlet property="text5" destination="teP-y7-tgW" id="ws8-L9-fho"/>
+                        <outlet property="text6" destination="7LC-7C-A9Q" id="u9A-DT-b1E"/>
+                        <outlet property="text7" destination="OFY-ey-t7L" id="sOR-pc-dwn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addChatHistory:"/>
+                <relationship kind="action" name="clean:"/>
+                <relationship kind="action" name="getGroupChatHistory:"/>
+                <relationship kind="action" name="getLatestChatTime:"/>
+                <relationship kind="action" name="getLatestGroupChatTime:"/>
+                <relationship kind="action" name="getLatestPrivateChatTime:"/>
+                <relationship kind="action" name="getPrivateChatHistory:"/>
+                <relationship kind="outlet" name="resultOutput" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resultStatus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="text1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="text2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="text3" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="text4" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="text5" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="text6" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="text7" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

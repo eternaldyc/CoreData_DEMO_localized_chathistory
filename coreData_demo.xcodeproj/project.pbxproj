@@ -18,6 +18,8 @@
 		0818A2C417F1806A0052C34D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0818A2C317F1806A0052C34D /* Default-568h@2x.png */; };
 		0818A2C717F1806B0052C34D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0818A2C517F1806A0052C34D /* MainStoryboard.storyboard */; };
 		0818A2CA17F1806B0052C34D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0818A2C917F1806B0052C34D /* ViewController.m */; };
+		0818A2D117F1852B0052C34D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0818A2D017F1852B0052C34D /* CoreData.framework */; };
+		6D75D31917F2B35000E738CA /* THUDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D75D31717F2B35000E738CA /* THUDataBase.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		0818A2C617F1806B0052C34D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0818A2C817F1806B0052C34D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0818A2C917F1806B0052C34D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0818A2D017F1852B0052C34D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6D75D31817F2B35000E738CA /* THUDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = THUDataBase.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0818A2D117F1852B0052C34D /* CoreData.framework in Frameworks */,
 				0818A2AE17F1806A0052C34D /* UIKit.framework in Frameworks */,
 				0818A2B017F1806A0052C34D /* Foundation.framework in Frameworks */,
 				0818A2B217F1806A0052C34D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +78,7 @@
 		0818A2AC17F1806A0052C34D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0818A2D017F1852B0052C34D /* CoreData.framework */,
 				0818A2AD17F1806A0052C34D /* UIKit.framework */,
 				0818A2AF17F1806A0052C34D /* Foundation.framework */,
 				0818A2B117F1806A0052C34D /* CoreGraphics.framework */,
@@ -96,6 +102,7 @@
 		0818A2B417F1806A0052C34D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D75D31717F2B35000E738CA /* THUDataBase.xcdatamodeld */,
 				0818A2B517F1806A0052C34D /* coreData_demo-Info.plist */,
 				0818A2B617F1806A0052C34D /* InfoPlist.strings */,
 				0818A2B917F1806A0052C34D /* main.m */,
@@ -176,6 +183,7 @@
 				0818A2BA17F1806A0052C34D /* main.m in Sources */,
 				0818A2BE17F1806A0052C34D /* AppDelegate.m in Sources */,
 				0818A2CA17F1806B0052C34D /* ViewController.m in Sources */,
+				6D75D31917F2B35000E738CA /* THUDataBase.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +306,23 @@
 				0818A2CF17F1806B0052C34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D75D31717F2B35000E738CA /* THUDataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D75D31817F2B35000E738CA /* THUDataBase.xcdatamodel */,
+			);
+			currentVersion = 6D75D31817F2B35000E738CA /* THUDataBase.xcdatamodel */;
+			name = THUDataBase.xcdatamodeld;
+			path = ../THUDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0818A2A217F1806A0052C34D /* Project object */;
 }
